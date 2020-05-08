@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>homepage</title>
+		<style>
+		@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+		</style> 
+	</head>
+
+	
+	<body>
+
+<!-- This piece of Javascript will randomly decide a mascot for your homepage. -->
+<script>
+
+
+var pictures = ['images/mascot1.png', 'images/mascot2.png', 'images/mascot3.png', 'images/mascot4.png', 'images/mascot5.png', 'images/mascot6.png', 'images/mascot7.png', 'images/mascot8.png', 'images/mascot9.png', 'images/mascot10.png', 'images/mascot11.png', 'images/mascot12.png', 'images/mascot13.png',　'images/mascot14.png', 'images/mascot15.png', 'images/mascot16.png', 'images/mascot17.png', 'images/mascot18.png', 'images/mascot19.png', 'images/mascot20.png',];
+
+var picture = pictures[Math.floor(Math.random() * pictures.length)];
+
+document.write('<img src="' + picture + '"/>');
+
+</script>
+
+<!-- This piece of Javascript generates a greeting based on the time of day. -->
+<script id="greeting">
+<!--
+{
+var greet;
+
+  if (new Date().getHours() < 12) {
+        greet = "Good morning, daaarling. You've got a fun day ahead.";
+		}
+		else if (new Date().getHours() < 16) {
+			greet = "Only a beta would be using his computer right now";
+			}
+			else　if (new Date().getHours() < 18) {
+				greet = "It's getting late, you know what that means";
+				}
+				else  {
+					greet = "Time to show mommy how much you love her";
+					}
+					
+document.write('<p>' + greet + '</p>');
+}
+//-->
+</script>
+
+<!-- These are the main drop down menu items. Replace the placeholders with what you need. -->
+		<div id="navparent"> 
+			<nav>
+				<ul>
+						<li>
+							<div>
+								<a href="http://www.4chan.org/">4chan</a>
+							</div>
+										<ul> <!-- This is the part that makes it a drop down. Add this code between the <li> </li> tags of what you want to be dropped down -->
+											<li><a href="https://boards.4chan.org/d/">/d/</a></li>
+											<li><a href="https://boards.4chan.org/tg/">/tg/</a></li>
+											<li><a href="https://boards.4chan.org/t/">/t/</a></li>
+										</ul>
+						</li>
+						<li>
+							<div>
+								<a href="http://www.youtube.com/">youtube</a>
+							</div>
+						</li>
+						<li>
+							<div>
+								<a href="https://www.reddit.com/">reddit</a>
+							</div>
+						</li>
+						<li>
+							<div>
+								<a href="http://www.soundcloud.com/">soundcloud</a>
+							</div>
+						</li>	
+			</ul>
+		</nav>
+		
+		<hr>
+		
+		<!-- This is your secondary menu. Replace the placeholders with what you need. These can also be drop downs because of my bad coding. -->
+		<nav class="nav2">
+			<ul class="ul2">
+				<li><a href="https://gelbooru.com/">gel</a></li>
+				<li><a href="https://www.pornhub.com/">ph</a></li>
+				<li><a href="https://censored.booru.org/index.php">censored</a></li>
+				<li><a href="https://milovana.com/webteases/">milo</a></li>
+				<li><a href="https://footfetishbooru.booru.org/">feet</a></li>
+				<li><a href="https://redgifs.com/">gifs</a></li>
+				<li><a href="http://exhentai.org/">ex</a></li>
+				<li><a href="https://discord.com/channels/@me">disc</a></li>
+			</ul>
+		
+		</nav>
+		</div>
+				
+		<!-- This is the searchbox. -->
+		<form id="searchfield" method="get" action="http://www.google.com/search"> <input type="text" name="q" size="95" maxlength="255" value="" class="textinput" autofocus="true" autocomplete="off" placeholder="search" STYLE= "background-color: #B78388; font-family: 'Gochi Hand' " /> <input type="submit" value=">" class="submitinput"/>
+
+		
+	</body>
+
+</html>

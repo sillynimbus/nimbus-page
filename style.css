@@ -1,0 +1,200 @@
+/*background settings, changing font here changes it for entire page*/
+body {
+
+font-family: 'Gochi Hand';
+background-color: #FDE1E3;
+font-size: 32px;
+cursor: default;
+overflow: hidden;
+
+}
+/*mascot image settings*/
+img {
+
+z-index: -2;
+position: fixed;
+max-height: 900px;
+bottom: 0%;
+left: 0%;
+
+}
+/*all links alignment*/
+#navparent {
+
+position: absolute;
+top: 45%;
+margin-top: -200px;
+left: 0;
+width: 100%;
+
+}
+/*top links allignment*/
+nav {
+
+position: fixed;
+text-align: center;
+cursor: default;
+width: 100%;
+margin-left: auto;
+margin-right: auto;
+z-index: 2;
+
+}
+/*link text settins*/
+a {
+
+text-decoration: none;
+cursor: default;
+color: #B78388;
+transition: color 0.2s;
+
+}
+/*link hover settings*/
+a:hover{
+
+color: #E3CDD4;
+
+}
+
+
+li > ul {
+
+   visibility: hidden;
+   opacity: 0;
+   transition: all 0.5s;
+   overflow-y: hidden;
+   max-height: 0;
+   padding: 0 5px;
+   
+}
+
+li:hover > ul {
+
+   visibility: visible;
+   opacity: 1;
+   transition: all 0.5s;
+   max-height: 200px;
+   max-width: auto;
+   overflow-y: hidden;
+   
+}
+/*top link settings*/
+nav > ul > li {
+
+background: #BEB8CC;
+padding: 1px 5px;
+border: 1px solid #cecde2;
+display: inline-table;
+border-radius: 5px;
+
+
+}
+
+nav ul ul li {
+
+display: block;
+padding: 5px 0px;
+
+
+}
+
+/*large header at top*/
+p {
+	
+position: fixed;
+font-size: 68px;
+color: #8699B0;
+top: 45px;
+width: 100%;
+left: 50px;
+text-align: center;
+cursor: default;
+-webkit-text-stroke: 1px #B78388;
+text-shadow: 0px 4px 4px #282828;
+}
+
+/*divider between links*/
+hr {
+
+position: fixed;
+margin-bottom: -10px;
+width: 30%;
+top: 33%;
+left: 36%;
+z-index: -2;
+color: #BEB8CC;
+height: 0px;
+border-top: 1px solid #cecde2;
+
+
+}
+
+.nav2 {
+
+position: relative;
+width: 60%;
+top: 90px;
+margin-left:auto;
+margin-right:auto;
+cursor: default;
+z-index: 1;
+
+
+}
+
+.nav2 > .ul2 > li,a {
+
+border: none;
+background: none;
+
+}
+
+.ul2 > li a {
+
+font-size: 100%;
+
+}
+/*Search box settins, COLOR OF SEARCHBOX IS IN THE HTML FILE */
+#searchfield .textinput {
+
+position: absolute;
+top:1%;
+left:35%;
+border:1px solid #BEB8CC; 
+border-top-left-radius: 5px 5px;
+border-bottom-left-radius: 5px 5px;
+
+}
+
+#searchfield .submitinput {
+
+position: fixed;
+top:1%;
+left:68%;
+border:1px solid #BEB8CC; 
+border-top-right-radius: 5px 5px;
+border-bottom-right-radius: 5px 5px;
+color: #B78388;
+transition: all 0.2s;
+
+}
+
+#searchfield .submitinput:active {
+
+color: #FFFFFF;
+background-color: #B78388;
+
+}
+
+.submitinput::-moz-focus-inner { 
+border: ;
+
+}
+
+@media screen and (max-width: 920px) {
+
+
+/* You can edit this portion to make it phone/tablet compatible */
+
+}
+
